@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Autocomplete Demo</title>
+</head>
+<body>
+    <form action="https://www.w3schools.com/action_page.php" method="post">
+        <!-- Autocomplete explicitly enabled -->
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username" autocomplete="on" />
+        <br/>
+
+        <!-- Autocomplete explicitly disabled -->
+        <label for="noAutoComplete">No Autocomplete:</label>
+        <input type="text" id="noAutoComplete" name="noAutoComplete" autocomplete="off" />
+        <br/>
+
+        <!-- Specific autocomplete hint: email -->
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" autocomplete="email" />
+        <br/>
+
+        <!-- Specific autocomplete hint: bday -->
+        <label for="bday">Birthday:</label>
+        <input type="date" id="bday" name="bday" autocomplete="bday" />
+        <br/>
+
+        <!-- Specific autocomplete hint: address-line1 -->
+        <label for="address">Address:</label>
+        <input type="text" id="address" name="address" autocomplete="address-line1" />
+        <br/>
+        
+        <input type="submit" value="Submit" />
+    </form>
+</body>
+</html>

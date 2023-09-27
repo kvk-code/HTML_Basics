@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Datalist Demo</title>
+</head>
+
+<body>
+    <h1>Datalist Example</h1>
+    <form action="https://www.w3schools.com/action_page.php" method="post">
+        <label for="browser">Choose a browser:</label>
+        <input list="browsers" name="browser" id="browser" autocomplete="off">
+        <datalist id="browsers">
+            <option value="Chrome">
+            <option value="Firefox">
+            <option value="Safari">
+            <option value="Edge">
+            <option value="Opera">
+        </datalist>
+        <br/>
+
+        <label for="fruit">Choose a fruit:</label>
+        <input list="fruits" name="fruit" id="fruit" autocomplete="on">
+        <datalist id="fruits">
+            <option value="Apple">
+            <option value="Banana">
+            <option value="Cherry">
+            <option value="Date">
+            <option value="Grape">
+        </datalist>
+        <br/>
+
+        <label for="color">Choose a color:</label>
+        <input list="colors" name="color" id="color" autocomplete="color">
+        <datalist id="colors">
+            <option value="Red">
+            <option value="Green">
+            <option value="Blue">
+            <option value="Yellow">
+            <option value="Purple">
+        </datalist>
+        <br/>
+
+        <input type="submit" value="Submit">
+    </form>
+</body>
+
+</html>
